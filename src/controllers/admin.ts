@@ -2,7 +2,7 @@ import { controller, get, use, validator } from "@webgeek/basic-express-decorato
 import { Request, Response } from 'express';
 import { ensureUserIsAdmin } from "../middlewares/ensureUserIsAdmin";
 import { logger } from "../middlewares/logger";
-import { checkEmail } from "../validators/checkAge";
+import { checkEmail } from "../validators/checkEmail";
 
 @controller('/admin', ensureUserIsAdmin, logger)
 export class AdminController {
